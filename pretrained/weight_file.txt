@@ -1,0 +1,1 @@
+Put the weight_file 'xxx.pth' in here.
