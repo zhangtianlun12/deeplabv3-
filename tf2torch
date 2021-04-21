@@ -1,0 +1,9 @@
+import torch
+from Xception import converter
+from Xception import xception
+
+checkpoint_path = 'xxxx.....xxx/model.ckpt'
+output_path = '.pretrained/xception_65.pth'
+model = xception.Xception65(num_classes=1001)
+converter.convert(model, checkpoint_path)
+torch.save(model.state_dict(), output_path)
